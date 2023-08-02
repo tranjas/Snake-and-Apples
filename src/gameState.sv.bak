@@ -1,0 +1,98 @@
+
+module gameState (clk, reset, lights, applePre, finalGrn, finalRed);
+	input logic clk, reset;
+	input reg [15:0][15:0] lights, applePre;
+	output reg[15:0][15:0] finalGrn, finalRed;
+	
+	enum { play, gg } ns, ps;
+	
+	always_comb begin
+		case (ps)
+			play: if (lights == '0) 
+					ns = gg;
+					else
+					ns = play;
+					
+			  gg: ns = gg;
+		endcase
+	end
+	
+	always_ff @ (posedge clk) begin
+		if (reset)
+			ps <= play;
+		else 
+			ps <= ns;
+	end
+	
+	always_comb begin 
+		if (ps == gg) 
+			begin
+			finalRed[00] = 16'b0000000000000000;
+			finalRed[01] = 16'b0000000000000000;
+			finalRed[02] = 16'b0111011101010110;
+			finalRed[03] = 16'b0100010101110100;
+			finalRed[04] = 16'b0101011101110110;
+			finalRed[05] = 16'b0101010101010100;
+			finalRed[06] = 16'b0111010101010110;
+			finalRed[07] = 16'b0000000000000000;
+			finalRed[08] = 16'b0111010101101110;
+			finalRed[09] = 16'b0101010101001010;
+			finalRed[10] = 16'b0101010101101110;
+			finalRed[11] = 16'b0101001001001100;
+			finalRed[12] = 16'b0111001001101010;
+			finalRed[13] = 16'b0000000000000000;
+			finalRed[14] = 16'b0000000000000000;
+			finalRed[15] = 16'b0000000000000000;
+			
+			finalGrn[00] = 16'b0000000000000000;
+			finalGrn[01] = 16'b0000000000000000;
+			finalGrn[02] = 16'b0111011101010110;
+			finalGrn[03] = 16'b0100010101110100;
+			finalGrn[04] = 16'b0101011101110110;
+			finalGrn[05] = 16'b0101010101010100;
+			finalGrn[06] = 16'b0111010101010110;
+			finalGrn[07] = 16'b0000000000000000;
+			finalGrn[08] = 16'b0111010101101110;
+			finalGrn[09] = 16'b0101010101001010;
+			finalGrn[10] = 16'b0101010101101110;
+			finalGrn[11] = 16'b0101001001001100;
+			finalGrn[12] = 16'b0111001001101010;
+			finalGrn[13] = 16'b0000000000000000;
+			finalGrn[14] = 16'b0000000000000000;
+			finalGrn[15] = 16'b0000000000000000;
+			end
+		else begin
+			finalRed = applePre;
+			finalGrn = lights;
+		end
+	end
+	
+endmodule
+
+module gameState_test ();
+	logic clk, reset;
+	reg [15:0][15:0] lights, applePre;
+	reg[15:0][15:0] finalGrn, finalRed;
+	
+	gameState gs_dut (.clk, .reset, .lights, .applePre, .finalGrn, .finalRed);
+	
+	parameter CLOCK_PERIOD = 50;
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk;
+	end
+	
+	initial begin
+																	@(posedge clk);   
+		reset <= 1; lights[00][10] = '1;	 				@(posedge clk);
+		reset <= 0; 										   @(posedge clk);
+																	@(posedge clk);
+						applePre[10][10] = '1;				@(posedge clk);
+																	@(posedge clk);
+																	@(posedge clk);
+																	@(posedge clk);
+						lights[00][10] = '0;					@(posedge clk);
+																	@(posedge clk);
+																	@(posedge clk);
+	end
+endmodule

@@ -1,0 +1,7 @@
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (10281): Verilog HDL Declaration information at Snake.sv(16): object "Right" differs only in case from object "right" in the same scope File: C:/Users/jason/OneDrive/Documents/School/EE 271/Lab 7/Snake.sv Line: 16
+Info (10281): Verilog HDL Declaration information at Snake.sv(16): object "Down" differs only in case from object "down" in the same scope File: C:/Users/jason/OneDrive/Documents/School/EE 271/Lab 7/Snake.sv Line: 16
+Info (10281): Verilog HDL Declaration information at Snake.sv(16): object "Up" differs only in case from object "up" in the same scope File: C:/Users/jason/OneDrive/Documents/School/EE 271/Lab 7/Snake.sv Line: 16
+Info (10281): Verilog HDL Declaration information at Snake.sv(16): object "Left" differs only in case from object "left" in the same scope File: C:/Users/jason/OneDrive/Documents/School/EE 271/Lab 7/Snake.sv Line: 16
+Info (10281): Verilog HDL Declaration information at LSFR.sv(7): object "shift" differs only in case from object "Shift" in the same scope File: C:/Users/jason/OneDrive/Documents/School/EE 271/Lab 7/LSFR.sv Line: 7
+Warning (10030): Net "LEDR" at DE1_SoC.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/jason/OneDrive/Documents/School/EE 271/Lab 7/DE1_SoC.sv Line: 4

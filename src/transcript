@@ -1,0 +1,489 @@
+# Reading C:/intelFPGA/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:34:22 on Mar 06,2023
+# vlog -reportprogress 300 ./DE1_Soc.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 15:34:23 on Mar 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:34:23 on Mar 06,2023
+# vlog -reportprogress 300 ./Snake.sv 
+# -- Compiling module Snake
+# -- Compiling module Snake_test
+# -- Compiling module synchronizer
+# -- Compiling module synchronizer_test
+# -- Compiling module userinput
+# -- Compiling module gameState
+# -- Compiling module gameState_test
+# -- Compiling module snakedir
+# -- Compiling module snakedir_test
+# -- Compiling module snakeLight
+# -- Compiling module snakeBase1
+# -- Compiling module snakeBase2
+# -- Compiling module snakeBase3
+# -- Compiling module snakeLight_test
+# -- Compiling module snakeBase1_test
+# -- Compiling module snakeBase2_test
+# -- Compiling module snakeBase3_test
+# -- Compiling module LFSR
+# -- Compiling module LFSR_4_test
+# -- Compiling module sizeDet
+# -- Compiling module sizeDet_test
+# -- Compiling module appleRNG
+# -- Compiling module appleRNG_test
+# 
+# Top level modules:
+# 	Snake_test
+# 	synchronizer_test
+# 	gameState_test
+# 	snakedir_test
+# 	snakeLight_test
+# 	snakeBase1_test
+# 	snakeBase2_test
+# 	snakeBase3_test
+# 	LFSR_4_test
+# 	sizeDet_test
+# 	appleRNG_test
+# End time: 15:34:23 on Mar 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:34:23 on Mar 06,2023
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 15:34:23 on Mar 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:34:23 on Mar 06,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 15:34:23 on Mar 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Snake_test 
+# Start time: 15:34:24 on Mar 06,2023
+# Loading sv_std.std
+# Loading work.Snake_test
+# Loading work.Snake
+# Loading work.userinput
+# Loading work.snakedir
+# Loading work.appleRNG
+# Loading work.LFSR
+# Loading work.sizeDet
+# Loading work.gameState
+# Loading work.synchronizer
+# Loading work.snakeLight
+# Loading work.snakeBase1
+# Loading work.snakeBase2
+# Loading work.snakeBase3
+# ** Warning: (vsim-3015) ./Snake.sv(44): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(44): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[1]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[2]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[3]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[4]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[5]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[6]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[7]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[8]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[9]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[10]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[11]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[12]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[13]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[14]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(47): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(47): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[1]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[1]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[2]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[2]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[3]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[3]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[4]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[4]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[5]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[5]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[6]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[6]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[7]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[7]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[8]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[8]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3017) ./Snake.sv(68): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[7]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3722) ./Snake.sv(68): [TFMPC] - Missing connection for port 'hit'.
+# ** Warning: (vsim-3017) ./Snake.sv(71): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[8]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3722) ./Snake.sv(71): [TFMPC] - Missing connection for port 'hit'.
+# ** Warning: (vsim-3017) ./Snake.sv(74): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[9]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3722) ./Snake.sv(74): [TFMPC] - Missing connection for port 'hit'.
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[10]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[10]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[11]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[11]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[12]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[12]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[13]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[13]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[14]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[14]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(50): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(50): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[1]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[2]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[3]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[4]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[5]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[6]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[7]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[8]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[9]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[10]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[11]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[12]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[13]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[14]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(53): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(53): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Error: Cannot open macro file: Snake_test.do
+# Error in macro ./runlab.do line 21
+# Cannot open macro file: Snake_test.do
+#     while executing
+# "do Snake_test.do"
+add wave -position end  sim:/Snake_test/CLOCK_PERIOD
+add wave -position end  sim:/Snake_test/CLOCK_PERIOD
+add wave -position end  sim:/Snake_test/clk
+add wave -position end  sim:/Snake_test/KEY
+add wave -position end  sim:/Snake_test/LEDR
+add wave -position end  sim:/Snake_test/GPIO_1
+add wave -position end  sim:/Snake_test/finalGrn
+add wave -position end  sim:/Snake_test/finalRed
+add wave -position end  sim:/Snake_test/SW
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/jason/OneDrive/Documents/School/EE 271/Lab 7/Snake_test.do}
+do rublab.do
+# Cannot open macro file: rublab.do
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+run lab.do
+# Invalid time value: lab.do
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+do run
+# Cannot open macro file: run
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:37:47 on Mar 06,2023
+# vlog -reportprogress 300 ./DE1_Soc.sv 
+# -- Compiling module DE1_SoC
+# 
+# Top level modules:
+# 	DE1_SoC
+# End time: 15:37:47 on Mar 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:37:47 on Mar 06,2023
+# vlog -reportprogress 300 ./Snake.sv 
+# -- Compiling module Snake
+# -- Compiling module Snake_test
+# -- Compiling module synchronizer
+# -- Compiling module synchronizer_test
+# -- Compiling module userinput
+# -- Compiling module gameState
+# -- Compiling module gameState_test
+# -- Compiling module snakedir
+# -- Compiling module snakedir_test
+# -- Compiling module snakeLight
+# -- Compiling module snakeBase1
+# -- Compiling module snakeBase2
+# -- Compiling module snakeBase3
+# -- Compiling module snakeLight_test
+# -- Compiling module snakeBase1_test
+# -- Compiling module snakeBase2_test
+# -- Compiling module snakeBase3_test
+# -- Compiling module LFSR
+# -- Compiling module LFSR_4_test
+# -- Compiling module sizeDet
+# -- Compiling module sizeDet_test
+# -- Compiling module appleRNG
+# -- Compiling module appleRNG_test
+# 
+# Top level modules:
+# 	Snake_test
+# 	synchronizer_test
+# 	gameState_test
+# 	snakedir_test
+# 	snakeLight_test
+# 	snakeBase1_test
+# 	snakeBase2_test
+# 	snakeBase3_test
+# 	LFSR_4_test
+# 	sizeDet_test
+# 	appleRNG_test
+# End time: 15:37:47 on Mar 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:37:47 on Mar 06,2023
+# vlog -reportprogress 300 ./LEDDriver.sv 
+# -- Compiling module LEDDriver
+# -- Compiling module LEDDriver_Test
+# -- Compiling module LEDDriver_TestPhysical
+# 
+# Top level modules:
+# 	LEDDriver_Test
+# 	LEDDriver_TestPhysical
+# End time: 15:37:48 on Mar 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:37:48 on Mar 06,2023
+# vlog -reportprogress 300 ./clock_divider.sv 
+# -- Compiling module clock_divider
+# 
+# Top level modules:
+# 	clock_divider
+# End time: 15:37:48 on Mar 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 15:37:49 on Mar 06,2023, Elapsed time: 0:03:25
+# Errors: 9, Warnings: 71
+# vsim -voptargs=""+acc"" -t 1ps -lib work Snake_test 
+# Start time: 15:37:49 on Mar 06,2023
+# Loading sv_std.std
+# Loading work.Snake_test
+# Loading work.Snake
+# Loading work.userinput
+# Loading work.snakedir
+# Loading work.appleRNG
+# Loading work.LFSR
+# Loading work.sizeDet
+# Loading work.gameState
+# Loading work.synchronizer
+# Loading work.snakeLight
+# Loading work.snakeBase1
+# Loading work.snakeBase2
+# Loading work.snakeBase3
+# ** Warning: (vsim-3015) ./Snake.sv(44): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(44): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[1]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[2]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[3]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[4]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[5]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[6]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[7]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[8]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[9]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[10]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[11]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[12]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[13]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(56): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[14]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(47): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(47): [PCDPC] - Port size (1) does not match connection size (32) for port 'rL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[0]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[1]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[1]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[2]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[2]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[3]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[3]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[4]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[4]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[5]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[5]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[6]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[6]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[7]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[7]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[8]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[8]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3017) ./Snake.sv(68): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[7]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3722) ./Snake.sv(68): [TFMPC] - Missing connection for port 'hit'.
+# ** Warning: (vsim-3017) ./Snake.sv(71): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[8]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3722) ./Snake.sv(71): [TFMPC] - Missing connection for port 'hit'.
+# ** Warning: (vsim-3017) ./Snake.sv(74): [TFMPC] - Too few port connections. Expected 20, found 19.
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[9]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3722) ./Snake.sv(74): [TFMPC] - Missing connection for port 'hit'.
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[9]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[10]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[10]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[11]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[11]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[12]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[12]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[13]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[13]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(62): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[14]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(65): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[14]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(50): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(50): [PCDPC] - Port size (1) does not match connection size (32) for port 'uL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[0]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[1]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[2]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[3]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[4]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[5]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[6]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[7]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[8]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[9]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[10]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[11]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[12]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[13]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(59): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[14]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(53): [PCDPC] - Port size (1) does not match connection size (32) for port 'dL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[15]/genblk1/light File: ./Snake.sv
+# ** Warning: (vsim-3015) ./Snake.sv(53): [PCDPC] - Port size (1) does not match connection size (32) for port 'lL'. The port definition is at: ./Snake.sv(381).
+#    Time: 0 ps  Iteration: 0  Instance: /Snake_test/S_dut/eachRow[15]/eachCol[15]/genblk1/light File: ./Snake.sv
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position 44  sim:/Snake_test/KEY
+# Break key hit
+# Break in Module snakeLight at ./Snake.sv line 438
+# End time: 16:02:51 on Mar 06,2023, Elapsed time: 0:25:02
+# Errors: 0, Warnings: 70

@@ -1,0 +1,44 @@
+
+// module used to increment size whenever an apple is eaten
+module sizeDet (clk, reset, appleE, size);
+	input logic clk, reset, appleE;
+	output reg [5:0] size;
+	
+	always_ff @ (posedge clk) begin
+		if (reset)
+			size <= 6'b000011;
+		else if (appleE)
+			size <= size + 6'b000001;
+		else 
+			size <= size;
+	end
+endmodule
+
+module sizeDet_test ();
+	logic clk, reset, appleE;
+	reg [5:0] size;
+	
+	sizeDet SD_dut (.clk, .reset, .appleE, .size);
+	
+	parameter CLOCK_PERIOD = 50;
+	initial begin
+		clk <= 0;
+		forever #(CLOCK_PERIOD/2) clk <= ~clk;
+	end
+	
+	initial begin
+	reset <= 1;		@(posedge clk);  
+	reset <= 0;		@(posedge clk);  
+	appleE<= 1;    @(posedge clk);  
+	appleE<= 0;    @(posedge clk);
+						@(posedge clk);  
+						@(posedge clk);  
+	appleE<= 1;		@(posedge clk);  
+						@(posedge clk);  
+	appleE<= 0;		@(posedge clk);  
+	reset <= 1;		@(posedge clk);  
+	reset <= 0;		@(posedge clk);  
+	appleE<= 1;		@(posedge clk);  
+						@(posedge clk);  
+	end
+endmodule

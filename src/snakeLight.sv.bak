@@ -1,0 +1,80 @@
+
+// main module that controls all the green lights. When off, checks direction of latest input as well as surrounding lights if they are the
+// current head light, if so, becomes the next head and starts 2 counters, one larger counter that determines how quickly it moves (count2), and
+// a smaller counter that determines how old it is that increments every time count2 maxes out. 
+// determines if surrounding lights are headlights by checking if their count is 1, meaning they are a newly turned on light, and then waits until they are 
+// done with their first cycle of count2 to become the next head.
+module snakeLight (clk, reset, dL, rL, lL, uL, dC, dC2, rC, rC2, lC, lC2, uC, uC2, newD, size, count, count2, greenOn);
+	input  logic clk, reset, dL, rL, lL, uL;
+	input  reg [1:0] newD;
+	input reg [5:0] size, dC, rC, lC, uC;
+	input reg [7:0] dC2, rC2, lC2, uC2;
+	
+	output reg [5:0] count; 
+	output reg [7:0] count2;
+	output logic greenOn;
+	
+	reg [5:0] tempc;
+	reg [7:0] tempc2;
+	enum { Out, Current } ns, ps;
+	
+	// note: 00 = up, 01 = left; 10 = right; 11 = down
+	always_comb begin
+		case (ps) 
+			Out   : if (dL & dC == 6'b000001 & dC2 == 8'b11111111 & newD == 2'b00 | rL & rC == 6'b000001 & rC2 == 8'b11111111 & newD == 2'b01 |
+							lL & lC == 6'b000001 & lC2 == 8'b11111111 & newD == 2'b10 | uL & uC == 6'b000001 & uC2 == 8'b11111111 & newD == 2'b11 ) begin
+					      ns 	  = Current;
+							tempc   = 6'b000001;
+							tempc2  = 8'b00000000;
+					  end
+					  
+					  else begin
+							ns		  = Out;
+							tempc   = 6'b000000;
+							tempc2  = 8'b00000000;
+					  end
+	
+			Current: if (count <= size & count2 < 8'b11111111) begin
+							ns		  = Current;
+							tempc   = count;
+							tempc2  = count2 + 8'b00000001;
+					   end
+						
+						else if (count < size & count2 == 8'b11111111) begin
+							ns		  = Current;
+							tempc   = count + 6'b000001;
+							tempc2  = 8'b00000000;
+						end
+						
+						else if (count == size & count2 == 8'b11111111 & (dL & dC == 6'b000001 & dC2 == 8'b11111111 & newD == 2'b00 | rL & rC == 6'b000001 & rC2 == 8'b11111111 & newD == 2'b01 |
+																						  lL & lC == 6'b000001 & lC2 == 8'b11111111 & newD == 2'b10 | uL & uC == 6'b000001 & uC2 == 8'b11111111 & newD == 2'b11 ) ) begin
+							 ns	  = Current;
+							 tempc  = 6'b000001;
+							 tempc2 = 8'b00000000;
+						end
+						
+						else begin
+							ns 	  = Out;
+							tempc   = 6'b000000;
+							tempc2  = 8'b00000000;
+						end
+		endcase
+	end
+	
+	always_ff @ (posedge clk) begin
+		if (reset) begin
+			ps 	<= Out;
+			count <= 6'b000000;
+			count2<= 8'b00000000;
+		end
+		
+		else begin
+			ps		<= ns;
+			count <= tempc;
+			count2<= tempc2;
+		end
+	end
+	
+	assign greenOn = (ps == Current);
+	
+endmodule

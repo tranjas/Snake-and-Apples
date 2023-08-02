@@ -1,0 +1,37 @@
+
+module userinput (clk, reset, push, dir);
+	input logic clk, reset, push;
+	output logic dir;
+	
+	enum { inactive, active } ns, ps;
+	
+	always_comb begin
+		case (ps)
+			inactive: if (push) begin
+							ns = active;
+							dir = 0;
+						 end
+						 else begin
+							ns = inactive;
+							dir = 0;
+						 end
+			
+			active: if (push) begin
+							ns = active;
+							dir = 0;
+					  end
+					  else begin
+							ns = inactive;
+							dir = 1;
+					  end
+		endcase
+	end
+	
+	always_ff @(posedge clk) begin
+		if (reset)
+			ps <= inactive;
+		else 
+			ps <= ns;
+	end
+	
+endmodule
